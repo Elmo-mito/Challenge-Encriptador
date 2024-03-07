@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<header>
+
+</header>
+
+<body>
+
+
+    <main class="main">
+
+        <section>
+
+            <textarea cols="74" rows="22" id="texto-encriptado" class="campo-texto" placeholder="coloca aquí el texto que deseas encriptar o desencriptar"></textarea>     
+            
+            <div class="informacion">Sólo letras minúsculas y sin acentos.</div>
+
+        <div class="btns">
+            <button class="btnEncriptar" onclick="btnEncriptar()"> Encriptar </button>
+            <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+
+        </section>
+            
+        <section>
+            <textarea cols="40" rows="22" id="campo-mensaje" class="mensaje"></textarea>
+        </section>  
+
+    
+        <div class="botonCopiar">
+            <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+
+    </main>
+
+    <script src="scipt.js"></script>
+
+
+</body>
+
+<footer>
+    <img src="images/logo-momo.png" class="logo-pie" alt="Logo del desarrollador">
+    <h2 class="creditos">@momo_gonzz</h2>
+</footer>
+
+</html>

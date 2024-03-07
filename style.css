@@ -1,0 +1,140 @@
+/* Encriptador - 1 Desktop */
+/*Bajar imagenes o hacerlas en photoshop y usarlas así y las propiedades ya las saco de figma (checar medidas en figma para poder manipularlo todo)*/
+*{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+body {
+    background-image: url(images/fondo.png);
+}
+
+.main {
+    display: flex;
+    margin-bottom: 50px ;
+    margin-left: 80px;
+}
+
+.informacion{
+    font-size: 22px;
+    color: #ffffff;
+    font-style: bold;
+    opacity: 60%;
+}
+.campo-texto{
+    border: none;
+    font-size: 16px;
+    margin: 10px;  
+    border-radius: 10px;
+    opacity: 90%;
+    background-color: #b4b8bc;
+
+    
+}
+::placeholder{
+    color: #000000;
+    font-style: bold;
+    font-size: 18px;}
+.campo-texto:focus{
+    outline: none;
+}
+
+
+.mensaje {
+
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 15px;
+    color: #000000;
+    margin-left: 200px;
+    opacity: 80%;
+}
+
+.btns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.btnEncriptar {
+    background-color: #232629;
+    border: 1px solid  #c6d3e3;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    transition: 450ms all;
+    opacity: 50%;
+}
+
+.btnDesencriptar {
+    background-color: #eceef0;
+    border: 1px solid  #000000;
+    border-radius: 24px;
+    color: #000000;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    transition: 450ms all;
+    opacity: 50%;
+}
+
+.btnCopiar {
+    background-image: url(images/colita.png);
+    background-size: 100px;
+    background-position: 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    color: #000000;
+    position: absolute;
+    margin-top: 575px;
+    margin-left: -250px;
+    background-color: #924f23;
+    transition: 450ms all;
+    opacity: 65%;
+}
+
+.btnEncriptar:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.btnDesencriptar:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.btnCopiar:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+
+.logo-pie {
+    opacity: 0.38;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.creditos{
+    font-size: 9pt;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ffffff;
+    opacity: 75%;
+}
+
+@media screen and (max-width: 480px){
+    .campo-texto, .mensaje{
+        position: center;
+    }
+
+}
